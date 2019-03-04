@@ -24,6 +24,13 @@ public class Person {
         this.spouse = spouse;
     }
 
+    public String toString() {
+        return "Person{" +
+                "man=" + man +
+                ", name='" + name + '\'' +
+                ", spouse=" + spouse +
+                '}';
+    }
 
     /**
      * This method checks gender of persons. If genders are not equal - tries to marry.
