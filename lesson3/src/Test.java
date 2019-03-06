@@ -4,11 +4,11 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 
-public class Test implements Iterable<String>{
+public class Test implements Iterable<String> {
     private String[] arr;
     private String[] arr2;
     private String text;
-    public static String FILE_NAME = "C:\\Users\\pashp\\IdeaProjects\\SBTJavaSchool\\lesson3\\src\\test2.txt";
+    //public static String FILE_NAME = "C:\\Users\\pashp\\IdeaProjects\\SBTJavaSchool\\lesson3\\src\\test2.txt";
 
     public Test(String text) {
         this.text = text.toLowerCase();
@@ -21,7 +21,6 @@ public class Test implements Iterable<String>{
         return arr.length;
     }
 
-
     public int uniqueWordsCount() {
         Set<String> hashSet = new HashSet<>(Arrays.asList(arr));
         return hashSet.size();
@@ -32,7 +31,7 @@ public class Test implements Iterable<String>{
         Set<String> hashSet = new HashSet<>(Arrays.asList(arr)); //берем различные слова
 
         List<String> uniqueWords = new ArrayList<>(hashSet);
-        Collections.sort(uniqueWords);   //по умолчанию итак сравниваются строки
+        Collections.sort(uniqueWords);   //по умолчанию лексикографический порядок
 
         Collections.sort(uniqueWords, new Comparator<String>() {
             @Override
@@ -72,6 +71,7 @@ public class Test implements Iterable<String>{
 //        }
 //    }
 
+    //4
     public void reverseLines() throws IOException {
 //        BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME));
 
@@ -85,6 +85,8 @@ public class Test implements Iterable<String>{
             System.out.println(s);
         }
     }
+
+    //5
     @Override
     public Iterator<String> iterator() {
         //Итератор перебирает слова в обратном порядке
@@ -108,20 +110,22 @@ public class Test implements Iterable<String>{
         };
     }
 
-    public void reversedList(){
-        Iterator<String> wordsIter=this.iterator();
-        for(String s: this){
-            System.out.println(s+" ");
+    public void reversedList() {
+        Iterator<String> wordsIter = this.iterator();
+        for (String s : this) {
+            System.out.println(s + " ");
         }
     }
-    public void usersLines(int[] nums){
-        List<String> list=new ArrayList<>(Arrays.asList(arr2));
+
+    //6
+    public void usersLines(int[] nums) {
+        List<String> list = new ArrayList<>(Arrays.asList(arr2));
 //        Integer number=new Integer(1);
 //        for(String s: arr2){
 //            number++;
 //        }
-        for(int num: nums){
-            System.out.println(num+" "+ list.get(num-1));
+        for (int num : nums) {
+            System.out.println(num + " " + list.get(num - 1));
         }
 
     }
