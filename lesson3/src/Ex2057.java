@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Ex2057 { //27 из 30 
+public class Ex2057 { //27 из 30
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();

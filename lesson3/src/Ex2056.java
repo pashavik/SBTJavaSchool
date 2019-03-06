@@ -26,7 +26,7 @@ public class Ex2056 {
 
         for(Map.Entry<String, Integer> item:map.entrySet()){
             if(max.equals(item.getValue())){
-              popularWord.add(item.getKey());
+                popularWord.add(item.getKey());
             }
         }
         Collections.sort(popularWord);
@@ -35,4 +35,3 @@ public class Ex2056 {
         }
     }
 }
-
