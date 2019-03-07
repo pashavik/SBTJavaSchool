@@ -3,8 +3,9 @@ import java.io.IOException;
 import java.util.*;
 
 public class Ex2056 {
+    public static String FILE_NAME = "C:\\Users\\pashp\\IdeaProjects\\SBTJavaSchool\\lesson3\\src\\test1.txt";
     public static void main(String[] args) throws IOException {
-        File file = new File("C:\\Users\\pashp\\IdeaProjects\\SBTJavaSchool\\lesson3\\src\\test1.txt");
+        File file = new File(FILE_NAME);
         Scanner sc = new Scanner(file);
 
         List<String> input=new ArrayList<>();

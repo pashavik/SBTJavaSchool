@@ -21,12 +21,14 @@ public class Test implements Iterable<String> {
         return arr.length;
     }
 
+    //1
     public int uniqueWordsCount() {
         Set<String> hashSet = new HashSet<>(Arrays.asList(arr));
         return hashSet.size();
 
     }
 
+    //2
     public void sortedWords() {
         Set<String> hashSet = new HashSet<>(Arrays.asList(arr)); //берем различные слова
 
@@ -72,7 +74,7 @@ public class Test implements Iterable<String> {
 //    }
 
     //4
-    public void reverseLines() throws IOException {
+    public void reverseLines() {
 //        BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME));
 
 //        String line;
@@ -96,10 +98,7 @@ public class Test implements Iterable<String> {
 
             @Override
             public boolean hasNext() {
-                if (current > 0)
-                    return true;
-                else
-                    return false;
+                return current > 0;   //simplify from (if(current>0) return true else return false;
             }
 
             @Override
@@ -112,9 +111,10 @@ public class Test implements Iterable<String> {
 
     public void reversedList() {
         Iterator<String> wordsIter = this.iterator();
-        for (String s : this) {
+        for (String s : this) {          //while (wordsIter.hasNext()){ String s=wordsIter.next(); System.out.println(s+" ");}
             System.out.println(s + " ");
         }
+
     }
 
     //6
