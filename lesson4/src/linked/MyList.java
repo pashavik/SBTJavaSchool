@@ -124,6 +124,7 @@ public class MyList<E> implements Iterable<E> {
             collection.add(element);
         }
         return true;
+
     }
 
     private static class Node<E> {
