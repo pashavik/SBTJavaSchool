@@ -1,4 +1,6 @@
-import exceptions.*;
+package terminal;
+
+import terminal.exceptions.*;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -6,7 +8,7 @@ import java.util.Date;
 
 public class TerminalImpl {
     private final TerminalServer server;
-   // private final PinValidator pinValidator;
+   // private final terminal.PinValidator pinValidator;
     private Validator validator;
 
     private int wrongCount;

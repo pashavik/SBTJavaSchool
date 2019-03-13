@@ -1,4 +1,4 @@
-package exceptions;
+package terminal.exceptions;
 
 public class TerminalServerException extends RuntimeException {
     public TerminalServerException(String s, Throwable throwable) {

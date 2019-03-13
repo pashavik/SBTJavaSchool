@@ -1,4 +1,4 @@
-package exceptions;
+package terminal.exceptions;
 
 public class AccountIsNotFoundException extends RuntimeException{
     public AccountIsNotFoundException(String message) {

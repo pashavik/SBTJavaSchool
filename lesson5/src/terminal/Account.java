@@ -1,4 +1,6 @@
-import exceptions.InsufficientFundsException;
+package terminal;
+
+import terminal.exceptions.InsufficientFundsException;
 
 public class Account {
     private final String accountNumber;

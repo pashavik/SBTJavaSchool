@@ -1,4 +1,4 @@
-package exceptions;
+package terminal.exceptions;
 
 public class InsufficientFundsException extends RuntimeException {
     public InsufficientFundsException(String message) {

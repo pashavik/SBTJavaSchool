@@ -1,4 +1,4 @@
-package exceptions;
+package terminal.exceptions;
 
 public class PinIsNotEntered extends RuntimeException {
     public PinIsNotEntered(String s) {

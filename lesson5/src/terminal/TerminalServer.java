@@ -1,7 +1,9 @@
-import exceptions.AccountIsNotFoundException;
-import exceptions.InsufficientFundsException;
-import exceptions.PinException;
-import exceptions.TerminalServerException;
+package terminal;
+
+import terminal.exceptions.AccountIsNotFoundException;
+import terminal.exceptions.InsufficientFundsException;
+import terminal.exceptions.PinException;
+import terminal.exceptions.TerminalServerException;
 
 import java.util.ArrayList;
 import java.util.List;

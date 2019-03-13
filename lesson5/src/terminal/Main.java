@@ -1,3 +1,5 @@
+package terminal;
+
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         TerminalImpl terminal = new TerminalImpl(new TerminalServer(), new Validator());

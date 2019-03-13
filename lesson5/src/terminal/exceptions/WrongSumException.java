@@ -1,4 +1,4 @@
-package exceptions;
+package terminal.exceptions;
 
 public class WrongSumException extends RuntimeException {
     public WrongSumException(String s) {

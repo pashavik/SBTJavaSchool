@@ -1,4 +1,6 @@
-import exceptions.WrongInputException;
+package terminal;
+
+import terminal.exceptions.WrongInputException;
 
 public class Validator {
     public void validateAccount(String accountNumber){
